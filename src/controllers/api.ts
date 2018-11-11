@@ -1,14 +1,16 @@
 import * as Router from 'koa-router';
 import logger from '../utils/logger';
+import { prometheusInstance as prometheus } from '../utils/prometheus';
 
 const router = new Router();
+const helloCounter = prometheus.createCounter({ name: 'hello_counter', help: 'hello counter help' });
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function hello(ctx) {
-  logger.info('calling hello');
+  helloCounter.inc(1);
   ctx.body = { msg: 'Hello World' };
 }
 

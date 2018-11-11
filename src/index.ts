@@ -5,12 +5,11 @@ import * as Router from 'koa-router';
 
 import api from './controllers/api';
 import logger, { appStarted } from './utils/logger';
-import PrometheusClient from './utils/prometheus';
+import { prometheusInstance as prometheus } from './utils/prometheus';
 
 const app = new Koa();
 const router = new Router();
 const prometheusRouter = new Router();
-const prometheus = new PrometheusClient('my application');
 
 const httpRequestDurationMicroseconds = prometheus.createHistogram({
   name: 'http_request_duration_ms',

@@ -14,7 +14,7 @@ class PrometheusClient {
   private readonly metricsInterval: number;
   private readonly registry: Registry;
 
-  constructor(namespace: string, registry: Registry = new Registry()) {
+  constructor(namespace: string = '', registry: Registry = new Registry()) {
     this.namespace = namespace;
     this.registry = registry;
     this.metricsInterval = collectDefaultMetrics({ register: this.registry });
@@ -33,7 +33,7 @@ class PrometheusClient {
    * @param labels
    */
   public setDefaultLabels(labels: object) {
-    this.registry.setDefaultLabels(labels)
+    this.registry.setDefaultLabels(labels);
   }
 
   /**
@@ -116,3 +116,5 @@ class PrometheusClient {
 }
 
 export default PrometheusClient;
+
+export const prometheusInstance = new PrometheusClient('my_app');
