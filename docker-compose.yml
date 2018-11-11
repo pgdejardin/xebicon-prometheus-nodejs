@@ -1,0 +1,28 @@
+version: "2.1"
+
+services:
+  prometheus:
+    container_name: xebicon-prometheus
+    image: pgdejardin/xebicon-prometheus:latest
+    ports:
+    - "9090:9090"
+    networks:
+    - xebicon
+  grafana:
+    container_name: xebicon-grafana
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    networks:
+      - xebicon
+  myApp:
+    container_name: xebicon-nodejs
+    image: pgdejardin/xebicon-node-prometheus:latest
+    ports:
+      - "8080:8080"
+    networks:
+      - xebicon
+
+networks:
+  xebicon:
+    driver: bridge

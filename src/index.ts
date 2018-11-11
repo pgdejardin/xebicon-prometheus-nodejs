@@ -51,13 +51,13 @@ app
     .use(router.routes())
     .use(router.allowedMethods());
 
-const port = process.env.PORT || 9090;
-const host: string = process.env.HOST || 'localhost';
+const port = process.env.PORT || 8080;
+const prettyHost: string = process.env.HOST || 'localhost';
 
 // Start your app.
-const server = app.listen(port, host as any, () => {
+const server = app.listen(port, () => {
   // Connect to ngrok in dev mode
-  appStarted(port, host);
+  appStarted(port, prettyHost);
 });
 
 process.on('SIGTERM', () => {
