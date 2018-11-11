@@ -34,16 +34,40 @@ Backend / Frontend developer
 
 # What is Monitoring?
 
+^
+L'efficacité de processus
+Les indicateurs business
+L’état de santé des services
+Alerting
+Auto-remediation
+
 ---
 
 ![inline fill](monitoring.png)
 
+^
+- Point de vue de l'Ops
+Utilisation CPU
+Utilisation de la RAM
+Espace disque 
+Bande passante du réseau
+Température du matériel
+Taux d'erreur disque
+- Point de vue de l'app (dev + business)
+Connections simultanées
+Métriques métier
+Débit de réception des messages
+
 ---
 
-# Prometheus
+![inline](https://www.cncf.io/wp-content/uploads/2017/08/logo_prometheus_padding-300x277.png)
 
 ---
 
 ![inline](prometheus.png)
+
+---
+
+![inline](http://www.d0wn.com/wp-content/uploads/grafana-logo-1.jpg)
 
 ---

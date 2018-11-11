@@ -1,0 +1,41 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "rules": {
+    "import-name": [
+      false
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case"
+    ],
+    "max-line-length": [
+      true,
+      150
+    ],
+    "strict-boolean-expressions": [
+      "allow-string",
+      "allow-mix",
+      "allow-number"
+    ],
+    "ter-arrow-parens": [
+      false
+    ],
+    "function-name": [false],
+    "object-shorthand-properties-first": false,
+    "object-literal-sort-keys": false,
+    "interface-name": false,
+    "no-console": {"severity": "warn"}
+  },
+  "linterOptions": {
+    "exclude": ["node_modules/**/*"]
+  },
+  "extends": ["tslint:recommended", "tslint-config-airbnb"]
+}

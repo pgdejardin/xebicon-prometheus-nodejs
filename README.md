@@ -2,6 +2,6 @@
 
 ## TODO
 
-- [ ] Plan
+- [x] Plan
 - [ ] Prometheus client
 - [ ] Demo ?
