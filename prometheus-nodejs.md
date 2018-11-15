@@ -36,6 +36,7 @@ Backend / Frontend developer
 # What is Monitoring?
 
 ^
+Annecdote sur l'évolution entre Ops et Dev sur ma carrière en 10ans
 L'efficacité de processus
 Les indicateurs business
 L’état de santé des services
