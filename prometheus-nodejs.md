@@ -5,7 +5,7 @@ slidenumbers: true
 
 ## XebiCon'__18__
 
-## How to monitor a __NodeJS__ app inside a __container__
+## How to monitor a __Node.js__ app inside a __container__
 
 ---
 
@@ -17,7 +17,7 @@ Paul-Guillaume Déjardin
 
 **@pgdejardin**
 
-Backend / Frontend developer
+Back-end / Front-end developer
 
 ---
 
@@ -26,8 +26,7 @@ Backend / Frontend developer
 ![right 50%](https://cdn3.iconfinder.com/data/icons/seo-glyph-2/24/task-512.png)
 
 - Monitoring?
-- **Prometheus**
-- **Grafana**
+- **Prometheus** & Co.
 - Some code
 - Demonstration
 
@@ -36,7 +35,7 @@ Backend / Frontend developer
 # What is Monitoring?
 
 ^
-Annecdote sur l'évolution entre Ops et Dev sur ma carrière en 10ans
+exemple de projet IRSN ou on gérer a la main sur l'ESX les applis tomcat, etc.
 L'efficacité de processus
 Les indicateurs business
 L’état de santé des services
@@ -62,19 +61,11 @@ Débit de réception des messages
 
 ---
 
-![inline](https://www.cncf.io/wp-content/uploads/2017/08/logo_prometheus_padding-300x277.png)
+![inline](https://raw.githubusercontent.com/xebia-france/logarcade/master/assets/logos/prometheus.png)
 
 ---
 
 ![inline](prometheus.png)
-
----
-
-![inline](http://www.d0wn.com/wp-content/uploads/grafana-logo-1.jpg)
-
----
-
-![inline](https://prometheus.io/assets/grafana_qps_graph.png)
 
 ---
 
@@ -84,11 +75,12 @@ Débit de réception des messages
 
 # Let's see what we have
 
-- NodeJS server made with Koa and Typescript running in Docker
+- Node.js server made with Koa and TypeScript running in Docker
 - with a `/api/hello` route
 - based on `prometheus-node-client` using `prom-client`
 - *Prometheus* server 
 - *Grafana* server
+- *cAdvisor* server
 
 ---
 
@@ -172,5 +164,6 @@ async function hello(ctx) {
 - https://github.com/pgdejardin/prometheus-client-node
 - https://prometheus.io/
 - https://grafana.com/
-- https://github.com/siimon/prom-client
+- https://github.com/google/cadvisor
+- https://prometheus.io/docs/guides/cadvisor/
 
