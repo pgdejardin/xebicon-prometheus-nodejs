@@ -27,20 +27,15 @@ Back-end / Front-end developer
 
 - Monitoring?
 - **Prometheus** & Co.
-- Some code
-- Demonstration
+- Some code 📝
+- Demonstration 🎉
 
 ---
 
 # What is Monitoring?
 
 ^
-exemple de projet IRSN ou on gérer a la main sur l'ESX les applis tomcat, etc.
-L'efficacité de processus
-Les indicateurs business
-L’état de santé des services
-Alerting
-Auto-remediation
+Le monitoring est l’action de surveiller une activité informatique. En général, il consiste à superviser l’état physique d’une machine, le nombre d’utilisateur, les requêtes, les performances réseaux…
 
 ---
 
@@ -61,7 +56,9 @@ Débit de réception des messages
 
 ---
 
-![inline](https://raw.githubusercontent.com/xebia-france/logarcade/master/assets/logos/prometheus.png)
+![100%](https://www.cncf.io/wp-content/uploads/2017/08/logo_prometheus_padding-300x277.png)
+![100%](http://www.satelliz.com/img/LogoPlgCAdvisor300.png)
+![60%](http://www.d0wn.com/wp-content/uploads/grafana-logo-1.jpg)
 
 ---
 
