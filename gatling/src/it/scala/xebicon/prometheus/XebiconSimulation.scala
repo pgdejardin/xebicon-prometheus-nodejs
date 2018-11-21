@@ -9,7 +9,7 @@ import scala.concurrent.duration._
 class XebiconSimulation extends Simulation {
 
   val httpProtocol = http
-    .baseUrl("http://localhost:8081") // Here is the root for all relative URLs
+    .baseUrl("http://localhost:8080") // Here is the root for all relative URLs
 
   val scn = scenario("BasicScenario") // A scenario is a chain of requests and pauses
     .exec(http("get")

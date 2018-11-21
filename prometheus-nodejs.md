@@ -11,7 +11,7 @@ slidenumbers: true
 
 # Who am I?
 
-![left filtered](pg.jpg)
+![left](pg.jpg)
 
 Paul-Guillaume Déjardin
 
@@ -75,9 +75,7 @@ Débit de réception des messages
 - Node.js server made with Koa and TypeScript running in Docker
 - with a `/api/hello` route
 - based on `prometheus-node-client` using `prom-client`
-- *Prometheus* server 
-- *Grafana* server
-- *cAdvisor* server
+- *Prometheus* + *cAdvisor* + *Grafana* = 😍 
 
 ---
 
@@ -157,10 +155,9 @@ async function hello(ctx) {
 
 ![](https://www.mediaan.com/wp-content/uploads/2017/01/launch17.jpg)
 
-- https://github.com/pgdejardin/xebicon-prometheus-nodejs
-- https://github.com/pgdejardin/prometheus-client-node
-- https://prometheus.io/
-- https://grafana.com/
-- https://github.com/google/cadvisor
-- https://prometheus.io/docs/guides/cadvisor/
+- github.com/pgdejardin/xebicon-prometheus-nodejs
+- github.com/pgdejardin/prometheus-client-node
+- prometheus.io & github.com/google/cadvisor
+- grafana.com
+- prometheus.io/docs/guides/cadvisor
 

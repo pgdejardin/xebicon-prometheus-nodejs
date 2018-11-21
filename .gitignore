@@ -3,3 +3,7 @@ node_modules
 yarn-error.log
 
 build
+
+gatling/target
+gatling/project/target
+gatling/project/project/target
